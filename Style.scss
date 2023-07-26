@@ -1,16 +1,94 @@
 // reset css
+// variable
+$hover-color: red;
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
+    padding: 0 110px;
+    margin: o auto;
     header {
+        max-width: 1440px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         nav {
-
+            width: 900px;
+            display: flex;
+            justify-content: space-between;
+            .nav-link {
+                &:hover {
+                  color: $hover-color;
+                    font-weight: 600px;
+                }
+                margin-right: 35px;
+                text-decoration: none;
+                font-size: 15px;
+                line-height: 22.5px;
+                font-weight: 600px;
+                color: black;
+            }
+            .acct-border {
+                border-right: 1px solid gray;
+                padding-right: 30px;
+            }
         }
     }
-}
+   main {
+    .hero-section {
+        display: flex;
+        padding-top: 80px;
+        height: calc( 100vh - 64px);
+        
+        .left-section {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-right: 120px;
+
+            .left-section-btn {
+                button{
+                border: none;
+                color: gray;
+                background-color: transparent;
+                margin-right: 5px;
+                }
+            }
+            h3 {
+                font-size: 64px;
+                padding: 80px 0;
+            }
+            p {
+                font-size: 16px;
+            }
+            .hero-link {
+                padding: 12px;
+                background-color: #b00000;
+                color: #ffffff;
+                text-decoration: none;
+                border-radius: 8px;
+                display: inline-block;
+                margin-right: 24px;
+            }
+            .hero-btn {
+                padding: 12px;
+                background-color: #ffffff;
+                border: 1px solid #000000;
+                border-radius: 8px;
+                display: inline-block;
+                margin-right: 24px;
+            }
+        }
+    }
+    .right-section{
+        width: 50%;
+        background-image: url(./images/hero.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+   }
+   }
