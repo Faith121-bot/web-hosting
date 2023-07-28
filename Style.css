@@ -77,9 +77,64 @@ body main .hero-section .left-section .hero-btn {
   display: inline-block;
   margin-right: 24px;
 }
-body main .right-section {
+body main .hero-section .right-section {
   width: 50%;
   background-image: url(./images/hero.png);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+body main .hero-section .right-section .triangle-one {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-left: 20px solid transparent;
+  border-right: 20px solid red;
+  border-bottom: 20px solid red;
+  border-top: 20px solid transparent;
+  position: absolute;
+  right: -20px;
+  top: 40px;
+}
+body main .hero-section .right-section .triangle-two {
+  width: 72px;
+  height: 72px;
+  display: block;
+  border-left: 36px solid transparent;
+  border-right: 36px solid red;
+  border-bottom: 36px solid red;
+  border-top: 36px solid transparent;
+  position: absolute;
+  bottom: 80px;
+  right: -20px;
+}
+body main .hero-section .right-section .triangle-three {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-left: 20px solid red;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid red;
+  border-top: 20px solid transparent;
+  position: absolute;
+  bottom: 150px;
+  left: -20px;
+}
+body main .sponsor {
+  margin: 80px 0;
+}
+body main .sponsor .sponsor-top {
+  display: flex;
+}
+body main .sponsor .sponsor-top .sponsor-top-left {
+  width: 50%;
+}
+body main .sponsor .sponsor-top .sponsor-top-right {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+body main .sponsor .sponsor-top .sponsor-top-right img {
+  display: block;
 }/*# sourceMappingURL=Style.css.map */

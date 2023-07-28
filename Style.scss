@@ -37,7 +37,7 @@ body {
         }
     }
    main {
-    .hero-section {
+        .hero-section {
         display: flex;
         padding-top: 80px;
         height: calc( 100vh - 64px);
@@ -81,14 +81,77 @@ body {
                 display: inline-block;
                 margin-right: 24px;
             }
-        }
+            
     }
     .right-section{
         width: 50%;
         background-image: url(./images/hero.png);
         background-repeat: no-repeat;
         background-size: cover;
+        position: relative;
 
+        .triangle-one {
+            width: 40px;
+            height: 40px;
+            // background-color: red;
+            display: block;
+            border-left: 20px solid transparent;
+            border-right: 20px solid red;
+            border-bottom: 20px solid red;
+            border-top: 20px solid transparent;
+            position: absolute;
+            right: -20px;
+            top: 40px;
+        }
+        .triangle-two {
+            width: 72px;
+            height: 72px;
+            // background-color: red;
+            display: block;
+            border-left: 36px solid transparent;
+            border-right: 36px solid red;
+            border-bottom: 36px solid red;
+            border-top: 36px solid transparent;
+            position: absolute;
+            bottom: 80px;
+            right: -20px;
+        }
+        .triangle-three {
+            width: 40px;
+            height: 40px;
+            // background-color: red;
+            display: block;
+            border-left: 20px solid red;
+            border-right: 20px solid transparent;
+            border-bottom: 20px solid red;
+            border-top: 20px solid transparent;
+            position: absolute;
+            bottom: 150px;
+            left: -20px;
+        }
     }
-   }
-   }
+        }
+        .sponsor {
+        margin: 80px 0;
+
+        .sponsor-top {
+            display: flex;
+
+            .sponsor-top-left {
+                width: 50%;
+            }
+            .sponsor-top-right {
+                width: 50%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                img {
+                    display: block;
+                }
+            }
+        }
+        
+         }      
+    }
+}
