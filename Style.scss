@@ -83,7 +83,7 @@ body {
             }
             
     }
-    .right-section{
+        .right-section{
         width: 50%;
         background-image: url(./images/hero.png);
         background-repeat: no-repeat;
@@ -138,20 +138,86 @@ body {
             display: flex;
 
             .sponsor-top-left {
-                width: 50%;
+                width: 40%;
+                .sponsor-big-text {
+                    height: 60px;
+                    font-size: 30px;
+                }
+                .sponsor-small-text {
+                    height: 50px;
+                    margin-right: 60px;
+                }
             }
             .sponsor-top-right {
-                width: 50%;
+                width: 60%;
+                padding: 0 25px;
+                margin-left:120px;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-evenly;
+                justify-content: space-between;
 
                 img {
                     display: block;
+                    
                 }
             }
         }
-        
-         }      
+        .sponsor-bottom {
+            margin-top: 100px;
+            display: flex;
+            .services-card {
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .services-big-text {
+                    font-weight: 600px;
+                    font-size: 16px;
+                    padding: 4px 8px;
+                }
+                .services-small-text {
+                    font-size: 12px;
+                    padding: 0 15px;
+                    text-align: center;
+                }
+            }
+        }
+        }   
+        .plan {
+            
+            .plan-top {
+                border: 1px solid red;
+                width: 856px;
+                height: 411px;
+                margin-left: 120px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .plan-big-text {
+                     margin: 20px 0;
+                     font-size: 50px;
+                     width: 650px;
+                     height: 120px;
+                }
+                .plan-small-text {
+                    margin: 20px 0;
+                }
+                .plan-icon {
+                    .plan-circle {
+                        margin: 20px 0;
+                        .circle-one {
+                            width: 40px;
+                            height: 40px;
+                            display: block;
+                            border-top: 20px solid red;
+                            border-left: 20px solid red;
+                            border-right: 20px solid red;
+                            border-bottom: 20px solid red;
+                        }
+                    }
+                }                
+            }
+        }
     }
 }
