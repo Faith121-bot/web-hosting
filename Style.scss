@@ -189,7 +189,7 @@ body {
                 border: 1px solid red;
                 width: 856px;
                 height: 411px;
-                margin-left: 120px;
+                margin-left:250px;
                 text-align: center;
                 display: flex;
                 flex-direction: column;
@@ -202,19 +202,31 @@ body {
                 }
                 .plan-small-text {
                     margin: 20px 0;
+                    font-size: 22px;
                 }
                 .plan-icon {
-                    .plan-circle {
-                        margin: 20px 0;
-                        .circle-one {
-                            width: 40px;
-                            height: 40px;
-                            display: block;
-                            border-top: 20px solid red;
-                            border-left: 20px solid red;
-                            border-right: 20px solid red;
-                            border-bottom: 20px solid red;
-                        }
+                    display: flex;
+                    margin: 20px 0;
+                }  
+                .plan-circle {
+                    .plan-circle-two {
+                        background-color: yellow;
+                        font-size: 10px;
+                    }
+                }      
+                .plan-tag {
+                    display: flex;
+                    margin: 30px 0 0;
+                    padding: 0 30px;
+                    font-size: 30px;
+                    
+                    .plan-tag-one {
+                        padding-top: 50px;
+                        padding-right: 150px; 
+                    }
+                    .plan-tag-two{
+                        padding-top: 50px;
+                        padding-left: 150px;
                     }
                 }                
             }
