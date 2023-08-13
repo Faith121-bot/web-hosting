@@ -59,9 +59,10 @@ body main .hero-section .left-section h3 {
 }
 body main .hero-section .left-section p {
   font-size: 16px;
+  padding: 14px 0;
 }
 body main .hero-section .left-section .hero-link {
-  padding: 12px;
+  padding: 10px;
   background-color: #b00000;
   color: #ffffff;
   text-decoration: none;
@@ -169,10 +170,9 @@ body main .sponsor .sponsor-bottom .services-card .services-small-text {
   text-align: center;
 }
 body main .plan .plan-top {
-  border: 1px solid red;
   width: 856px;
   height: 411px;
-  margin-left: 250px;
+  margin-left: 150px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -185,28 +185,328 @@ body main .plan .plan-top .plan-big-text {
   height: 120px;
 }
 body main .plan .plan-top .plan-small-text {
-  margin: 20px 0;
+  margin: 35px 0;
   font-size: 22px;
 }
-body main .plan .plan-top .plan-icon {
+body main .plan .plan-top .plan-circle {
   display: flex;
-  margin: 20px 0;
+  font-size: 18px;
+}
+body main .plan .plan-top .plan-circle .plan-circle-one {
+  width: 150px;
+  height: 20px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body main .plan .plan-top .plan-circle .plan-circle-one .button {
+  background-color: #d2d2d2;
+  width: 50px;
+  height: 25px;
+  border-radius: 200px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+}
+body main .plan .plan-top .plan-circle .plan-circle-one .button::before {
+  position: absolute;
+  left: 2px;
+  content: "";
+  background-color: #ffffff;
+  width: 16px;
+  height: 16px;
+  border-radius: 200px;
+  margin: 4px;
+  transition: 0.2s;
+}
+body main .plan .plan-top .plan-circle .plan-circle-one input:checked + .button {
+  background-color: #b00000;
+}
+body main .plan .plan-top .plan-circle .plan-circle-one input:checked + .button::before {
+  transform: translateX(25px);
+}
+body main .plan .plan-top .plan-circle .plan-circle-one input {
+  display: none;
 }
 body main .plan .plan-top .plan-circle .plan-circle-two {
-  background-color: yellow;
+  display: flex;
+  align-items: center;
+}
+body main .plan .plan-top .plan-circle .plan-circle-two .plan-discount {
+  padding: 0 4px;
   font-size: 10px;
+  background-color: yellow;
+  border-radius: 8px;
+  text-align: center;
+}
+body main .plan .plan-top .plan-circle .plan-icon-two {
+  padding: 0 14px;
 }
 body main .plan .plan-top .plan-tag {
   display: flex;
-  margin: 30px 0 0;
-  padding: 0 30px;
+  margin: 50px 0;
+  padding: 0 50px;
   font-size: 30px;
 }
 body main .plan .plan-top .plan-tag .plan-tag-one {
   padding-top: 50px;
-  padding-right: 150px;
+  padding-right: 180px;
 }
 body main .plan .plan-top .plan-tag .plan-tag-two {
   padding-top: 50px;
-  padding-left: 150px;
+  padding-left: 180px;
+}
+body main .plan .plan-bottom {
+  margin: 60px 0px;
+  padding: 20px;
+  display: flex;
+}
+body main .plan .plan-bottom .plan-big-text-one {
+  padding: 10px 10px;
+  padding-bottom: 2px;
+  font-size: 26px;
+}
+body main .plan .plan-bottom .plan-small-text-one {
+  padding: 0 10px;
+  width: 237px;
+  font-size: 14px;
+}
+body main .plan .plan-bottom .plan-big-text-two {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 28px;
+}
+body main .plan .plan-bottom .plan-small-text-two {
+  padding-left: 10px;
+}
+body main .plan .plan-bottom .plan-border {
+  display: flex;
+  width: 220px;
+  height: 40px;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 800px;
+}
+body main .plan .plan-bottom .plan-bottom-one {
+  border: 1px solid gray;
+  border-radius: 8px;
+  width: 300px;
+  height: 620px;
+  margin: 6px 40px;
+  padding: 10px;
+}
+body main .plan .plan-bottom .plan-bottom-two {
+  border: 1px solid gray;
+  border-radius: 8px;
+  width: 300px;
+  height: 620px;
+  margin: 6px 40px;
+  padding: 10px;
+}
+body main .plan .plan-bottom .plan-bottom-three {
+  border: 1px solid gray;
+  border-radius: 8px;
+  width: 300px;
+  height: 620px;
+  margin: 6px 40px;
+  padding: 10px;
+}
+body main .plan .plan-bottom .plan-small-text-three {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 45px;
+  color: gray;
+}
+body main .plan .plan-bottom .plan-checkbox {
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+body main .company .company-top .company-text .big-quote {
+  position: relative;
+  top: 70px;
+  right: 48px;
+  opacity: 0.4;
+}
+body main .company .company-top .company-text .company-big-text {
+  width: 445px;
+  height: 125px;
+  margin: 0 40px;
+  font-size: 60px;
+}
+body main .company .company-top .company-text .company-small-text {
+  margin: 0 40px;
+  font-size: 16px;
+}
+body main .company .company-top .small-quote {
+  position: relative;
+  top: 16px;
+  right: 20px;
+}
+body main .company .company-top .company-icon {
+  width: 80px;
+  height: 80px;
+}
+body main .company .company-top .box-one {
+  width: 410px;
+  height: 260px;
+  position: relative;
+  left: 620px;
+  bottom: 114px;
+  padding-left: 25px;
+  box-shadow: 4px 4px 4px gray;
+  border-radius: 8px;
+}
+body main .company .company-top .box-two {
+  width: 360px;
+  height: 340px;
+  position: relative;
+  left: 220px;
+  bottom: 220px;
+  padding-left: 25px;
+  box-shadow: 4px 4px 4px gray;
+  border-radius: 8px;
+}
+body main .company .company-top .box-three {
+  width: 410px;
+  height: 240px;
+  position: relative;
+  left: 620px;
+  bottom: 414px;
+  padding-left: 25px;
+  box-shadow: 4px 4px 4px gray;
+  border-radius: 8px;
+}
+body main .company .company-top .company-ptag-one {
+  width: 340px;
+  word-spacing: 12px;
+  margin-bottom: 15px;
+}
+body main .company .company-top .company-ptag-two {
+  font-size: 14px;
+}
+body main .company .company-top .company-ptag-three {
+  font-size: 12px;
+  color: gray;
+}
+body main .company .company-bottom .company-bottom-right {
+  max-width: 50%;
+  position: relative;
+  bottom: 220px;
+  width: 340px;
+  height: 200px;
+}
+body main .company .company-bottom .company-bottom-right .large-text {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+body main .company .company-bottom .company-bottom-right .little-text {
+  font-size: 16px;
+  padding-right: 12px;
+}
+body main .company .company-bottom .company-bottom-left {
+  max-width: 400px;
+  position: relative;
+  bottom: 460px;
+  left: 640px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body main .Ad .Ad-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 250px;
+  width: 1200px;
+  height: 440px;
+  background-color: #f7faf7;
+  border-radius: 12px;
+}
+body main .Ad .Ad-text .Ad-big-text {
+  width: 800px;
+  height: 160px;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+body main .Ad .Ad-text .Ad-bottom {
+  color: #ffffff;
+  background-color: #b00000;
+  border-radius: 6px;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .Ad .Ad-text .Ad-small-text {
+  margin: 6px;
+}
+body main .Ad .Ad-angle .Ad-angle-one {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-left: 20px solid transparent;
+  border-right: 20px solid #b00000;
+  border-bottom: 20px solid #b00000;
+  border-top: 20px solid transparent;
+  position: relative;
+  left: 400px;
+  bottom: 700px;
+}
+body main .Ad .Ad-angle .Ad-angle-two {
+  width: 72px;
+  height: 72px;
+  display: block;
+  border-left: 36px solid transparent;
+  border-right: 36px solid #b00000;
+  border-bottom: 36px solid #b00000;
+  border-top: 36px solid transparent;
+  position: relative;
+  left: 1140px;
+  bottom: 380px;
+}
+body main .Ad .Ad-angle .Ad-angle-three {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-left: 20px solid #b00000;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #b00000;
+  border-top: 20px solid transparent;
+  position: relative;
+  right: 18px;
+  bottom: 500px;
+}
+body footer .page-footer {
+  height: 580px;
+  background-color: #b00000;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 100px 0 24px;
+}
+body footer .page-footer .page-footer-one {
+  width: 260px;
+  word-spacing: 8px;
+  padding-top: 20px;
+}
+body footer .page-footer .page-footer-two {
+  margin: 40px 0;
+}
+body footer .page-footer-down {
+  position: relative;
+  bottom: 140px;
+  left: 80px;
+  color: #ffffff;
 }/*# sourceMappingURL=Style.css.map */
